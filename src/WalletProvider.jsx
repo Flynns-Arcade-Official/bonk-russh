@@ -228,7 +228,7 @@ export const WalletProvider = ({ children }) => {
    */
   const sendTokenTransaction = async (destination, amount) => {
     if (parseFloat(bonkBalance) < 1) {
-      if (confirm("You not enough bonk, please swap some bonk token") == true) {
+      if (confirm("You don't have enough bonk, please swap some bonk token") == true) {
         window.open(
           "https://raydium.io/swap?outputMint=DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
         );
